@@ -15,7 +15,21 @@ public class Program {
       }
     });
 
-    Arrays.sort(arr, (Integer a, Integer b)->{return b-a;});
+    
+
+    int arr2d[][] = new int[2][2];
+    arr2d[0][0]=
+
+    Arrays.sort(arr2d, new Comparator<int[]>(){
+      public int compare(int[] a, int[] b){
+        return a[0] - b[0];
+      }
+    });
+
+    Arrays.sort(arr2d, (int[] a, int[] b) ->{
+        return a[0] - b[0];
+      }
+    ); 
    
 
     //compress(3, arr);
