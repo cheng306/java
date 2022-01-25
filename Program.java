@@ -18,13 +18,6 @@ public class Program {
     
 
     int arr2d[][] = new int[2][2];
-    arr2d[0][0]=
-
-    Arrays.sort(arr2d, new Comparator<int[]>(){
-      public int compare(int[] a, int[] b){
-        return a[0] - b[0];
-      }
-    });
 
     Arrays.sort(arr2d, (int[] a, int[] b) ->{
         return a[0] - b[0];
@@ -33,10 +26,13 @@ public class Program {
    
 
     //compress(3, arr);
-    System.out.println(arr[0]);
-    System.out.println(arr[1]);
-    System.out.println(arr[2]);
-    System.out.println(arr[3]);
+    // System.out.println(arr[0]);
+    // System.out.println(arr[1]);
+    // System.out.println(arr[2]);
+    // System.out.println(arr[3]);
+
+    HelperClass hp = new HelperClass();
+    System.out.println(hp.a);
     
   }//End of main
 
@@ -50,4 +46,9 @@ public class Program {
   
   
   
+}
+
+class HelperClass{
+  int a=1;
+  String b;
 }
