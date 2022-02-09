@@ -30,6 +30,20 @@ public class Program {
     ); 
    
 
+    //rever two linked list
+    // ListNode a = l1;
+    // ListNode b = l1.next;
+    // a.next = null;
+    
+    // int l1Length = 1;
+    // while(b!=null){
+    //     ListNode tmp = b.next;
+    //     b.next = a;
+    //     a=b;
+    //     b = tmp;
+    //     l1Length++;
+    // }
+    // ListNode l1Reverse = a;
 
 
     
