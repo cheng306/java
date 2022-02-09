@@ -1,8 +1,14 @@
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Deque;
+import java.util.List;
 
 public class Program {
   public static void main(String[] args){
+
+    //use comparater
     Integer arr[] = new Integer[4];
     arr[0] = 0;
     arr[1] = 0;
@@ -16,7 +22,6 @@ public class Program {
     });
 
     
-
     int arr2d[][] = new int[2][2];
 
     Arrays.sort(arr2d, (int[] a, int[] b) ->{
@@ -25,24 +30,24 @@ public class Program {
     ); 
    
 
-    //compress(3, arr);
-    // System.out.println(arr[0]);
-    // System.out.println(arr[1]);
-    // System.out.println(arr[2]);
-    // System.out.println(arr[3]);
 
-    HelperClass hp = new HelperClass();
-    System.out.println(hp.a);
+
+    
+
+  
+
+
+
     
   }//End of main
 
 
-    public static int compress(int a, int[] arr){
-      if (arr[a] == a){
-        return a;
-      }
-      return arr[a] = compress(arr[a], arr);
+  public static int compress(int a, int[] arr){
+    if (arr[a] == a){
+      return a;
     }
+    return arr[a] = compress(arr[a], arr);
+  }
   
   
   
