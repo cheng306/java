@@ -16,7 +16,7 @@ public class Program {
     arr[3] = 2;
 
     Arrays.sort(arr, new Comparator<Integer>(){
-      public int compare(Integer a, Integer b){
+      public int compare(Integer a, Integer b){ 
         return b-a;
       }
     });
@@ -28,6 +28,8 @@ public class Program {
         return a[0] - b[0];
       }
     ); 
+
+    System.out.println(-6%10);
    
 
     //rever two linked list
@@ -44,6 +46,15 @@ public class Program {
     //     l1Length++;
     // }
     // ListNode l1Reverse = a;
+
+    int a =10;
+    int b;
+    if (a++>10){
+      System.out.println("gt");
+    }
+    else{
+      System.out.println("lt");
+    }
 
 
     
