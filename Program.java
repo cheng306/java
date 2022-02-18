@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Program {
@@ -47,14 +48,20 @@ public class Program {
     // }
     // ListNode l1Reverse = a;
 
-    int a =10;
-    int b;
-    if (a++>10){
-      System.out.println("gt");
-    }
-    else{
-      System.out.println("lt");
-    }
+    LinkedList<HelperClass> list = new LinkedList();
+    list.offer(new HelperClass());
+    list.offer(null);
+    list.offer(new HelperClass());
+    list.offer(null);
+    list.offer(new HelperClass());
+
+    System.out.println(list.size());
+
+    String[] strArr = " a  b ".split("\\s+");
+    System.out.println(strArr.length);
+    System.out.println(strArr[0]);
+    System.out.println(strArr[1]);
+    System.out.println(strArr[2]);
 
 
     
