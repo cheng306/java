@@ -30,7 +30,7 @@ public class Program {
       }
     ); 
 
-    System.out.println(-6%10);
+   
    
 
     //rever two linked list
@@ -48,21 +48,22 @@ public class Program {
     // }
     // ListNode l1Reverse = a;
 
-    LinkedList<HelperClass> list = new LinkedList();
-    list.offer(new HelperClass());
-    list.offer(null);
-    list.offer(new HelperClass());
-    list.offer(null);
-    list.offer(new HelperClass());
+   
 
-    System.out.println(list.size());
+    //split
+    // String[] strArr = " a  b ".split("\\s+");
+    // System.out.println(strArr.length);
+    // System.out.println(strArr[0]);
+    // System.out.println(strArr[1]);
+    // System.out.println(strArr[2]);
 
-    String[] strArr = " a  b ".split("\\s+");
-    System.out.println(strArr.length);
-    System.out.println(strArr[0]);
-    System.out.println(strArr[1]);
-    System.out.println(strArr[2]);
 
+
+    ArrayList<Integer> list= new ArrayList<>();
+    list.add(12); 
+    list.add(13);
+
+    HelperClass.method3(list);
 
     
 
@@ -88,4 +89,21 @@ public class Program {
 class HelperClass{
   int a=1;
   String b;
+
+  public static <T> T method1(T t){
+    System.out.println(t);
+    return t;
+  }
+
+  public static <U extends Number> void method2(List<U> list){
+    for (U u: list){
+      System.out.println(u);
+    }
+  }
+
+  public static void method3(List<? extends Number> list){
+    for (Number num: list){
+      System.out.println(num);
+    }
+  }
 }
